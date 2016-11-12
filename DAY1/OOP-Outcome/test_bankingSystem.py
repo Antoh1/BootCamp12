@@ -6,9 +6,11 @@ class CurrentAccountTestCases(unittest.TestCase):
     """Class for all possible test cases in the main BankAccount class"""
 
     def setUp(self):
+        """creating an instance of CurrentAccount"""
         self.CA = CurrentAccount()
     
     def tearDown(self):
+        """destroying an instance of SavingsAccount"""
         del self.CA
 
     def test_current_account_is_instance_of_bank_account(self):
@@ -29,9 +31,11 @@ class CurrentAccountTestCases(unittest.TestCase):
     
 class SavingsAccountTestCases(unittest.TestCase):
     def setUp(self):
+        """creating an instance of SavingsAccount"""
         self.SA = SavingsAccount()
     
     def tearDown(self):
+        """destroying an instance of SavingsAccount"""
         del self.SA
   
     def test_savings_account_is_instance_of_bank_account(self):
