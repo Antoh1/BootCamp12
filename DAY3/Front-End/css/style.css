@@ -1,8 +1,8 @@
-.body
+.body /* the css class for the main body background styling*/
 {
 	background-color: #caabf8;
 }
-.margin-top
+.margin-top /*css class for margin specifications*/
 {
 	margin-top: 5px;
 }
@@ -10,11 +10,11 @@
 {
 margin:0px; 	
 }
-.no-padding
+.no-padding /*css class for padding specifications*/
 { 
 	padding:0px; 
 }
-.footer
+.footer /*css class for the footer styling*/
 {
 	background-color: #7c6fe6;
 	color: blue;
