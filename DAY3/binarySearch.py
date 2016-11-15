@@ -13,26 +13,23 @@ class BinarySearch(list):
         for value in range(self.step, end + 1, self.step): #loop to generate a list
             self.append(value)
         self.length = len(self) #an instance variable 'length' to hold length of a list instance   
-    
-    def search(self, binary_item):
-        """method to search for a binary_item within a generated list instance and return a dictioray containing the indexof the item searched and number of iterations executed""" 
-        
-        first_item = 0 
-        last_item = self.length-1
-        count_iter = 0 #counts of iterations
+    def search(self, binary_item, first_item=0, last_item=None, count_iter=0):
+        """method to search for a binary_item within a generated list instance and 
+        return a dictioray containing the indexof the item searched and number of iterations executed"""
+        if not last_item:
+            last_item = self.length - 1
         if binary_item == self[first_item]:
-            return {'index': bottom, 'count': count_iter}
+            return {'index': first_item, 'count': count_iter}
         elif binary_item == self[last_item]:
-            return {'index': top, 'count': count_iter}
-        while first_item<=last:      #loop over a list untill the binary item is found    
-            midpoint = (first_item + last_item)//2
-            if self[midpoint] == binary_item:
-                return {'index': midpoint, 'count': count_iter}
-            else:
-                if binary_item < self[midpoint]:
-                    last_item = midpoint-1
-                else:
-                    first_item = midpoint+1
-            count_iter+=1
-            return self.search(binary_item)
-  
+            return {'index': last_item, 'count': count_iter}
+        midpoint = (first_item + last_item) // 2
+        if binary_item == self[midpoint]:
+            return {'index': midpoint, 'count': count_iter}
+        elif binary_item > self[midpoint]:
+            first_item = midpoint + 1
+        elif binary_item < self[midpoint]:
+            last_item = midpoint - 1
+        if first_item >= last_item:
+            return {'index': -1, 'count': count_iter}
+        count_iter += 1  
+        return self.search(binary_item, first_item, last_item, count_iter)        
