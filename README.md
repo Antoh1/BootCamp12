@@ -3,7 +3,7 @@ Assignments for the boot-camp training
 ### BT-Hacks
 The Andela Boot-camp code hacks
 
-#GUIDELINES WIKI
+# GUIDELINES WIKI
 
 **Aspiring to be a World-Class software developer/engineer?** This is a guide where you will get engaged on the great values,
 best software development practices and awesome opportunities the Andela-community will offer and equip you with as you journey 
@@ -14,7 +14,7 @@ on all of the processes involved in successful project creation so that any comm
 Once a team has followed our team lead guideline, Andela will assign a Mentor to that project to meet regularly with the team lead and 
 help them overcome any obstacles, as well as celebrate any victories. 
 
-##PURPOSE OF THE PLATFORM
+## PURPOSE OF THE PLATFORM
 
 Finding a great team is a way to achieving a great dream and Andela community provides you with the best platform to get that great team. 
 This wiki will guide you on various necessary stages to be on your dream team and strengthen your skill-set, which include:
